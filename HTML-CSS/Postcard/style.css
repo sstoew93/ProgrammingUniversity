@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Gochi Hand", cursive;
+}
+
+body {
+    background-color: #e0e0e0;
+    width: 1000px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.section .img {
+    background: url("./images/nature.jpg") no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 530px;
+    border-radius: 15px 15px 0 0;
+    padding: 1.6em 1.6em 1em 1.6em;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    margin: 1.6em;
+}
+
+.section .text {
+    background-color: #f4f5f4;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.section .text p {
+    font-size: 18px;
+    opacity: 90%;
+}
+
+.section .text h2 {
+    padding-bottom: 15px;
+    opacity: 80%;
+}
+
+.section .info {
+    background-color: #f9f9f9;
+    padding: 25px 2.5em;
+    border-radius: 0 0 15px 15px;
+}
+
+.info .author {
+    padding-bottom: 20px;
+    font-size: 26px;
+}
+
+.info > p {
+    padding-bottom: 10px;
+    opacity: 80%;
+}
