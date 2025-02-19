@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/commons::head}">
+</head>
+<body>
+<main>
+    <div class="welcome">
+
+        <h1>New Hampshire Night</h1>
+        <hr class="my-3 bg-white w-100"/>
+
+        <p th:text="${story.description}" class="h4" style="color: #c9cacb;  text-align: center;">
+            </p>
+        <hr class="my-3 bg-white w-100"/>
+
+        <div class="read-details">
+            <p>Story by: <span th:text="${story.author.username}"></span></p>
+            <p>
+                <a class="primary-text" th:href="@{/home}">
+                    <button>Back</button>
+                </a>
+            </p>
+            <p>Published on: <span th:text="${story.addedOn}">2025-01-25</span></p>
+        </div>
+    </div>
+
+</main>
+<footer th:replace="~{fragments/commons::footer}"></footer>
+</body>
+</html>
